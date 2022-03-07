@@ -1,4 +1,4 @@
-# RPA_Automations
+# RPA Automations
 
  A folder dedicated to multiple UiPath Automations that I've created and used in production for personal use, freelancing, or job clients that allowed me to share the automations.
  
