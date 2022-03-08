@@ -1,3 +1,0 @@
-Pentru a dezactiva o cerere, se intra co cod client pe nume -> Cases in pagina unde se selecteaza product change ->  si se sterge cazul in lucru
-
-Pentru a reincerca acelasi caz, backoffice date e aceiasi ca in input, start date se modifica
