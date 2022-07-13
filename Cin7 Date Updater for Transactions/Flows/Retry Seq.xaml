@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1130.4,610.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1254,533</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Retry_Seq_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -65,19 +65,20 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="831.2,471.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="833,468" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[io_Retry&lt;4]" sap:VirtualizedContainerService.HintSize="789.6,378.4" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[io_Retry&lt;4]" sap:VirtualizedContainerService.HintSize="791,376" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Int32">[io_Retry]</OutArgument>
           </Assign.To>
@@ -87,12 +88,12 @@
         </Assign>
       </If.Then>
       <If.Else>
-        <If Condition="[in_AppError=&quot;&quot; or in_AppError is Nothing]" sap:VirtualizedContainerService.HintSize="483.2,219.2" sap2010:WorkflowViewState.IdRef="If_2">
+        <If Condition="[not(in_AppError=&quot;&quot; or in_AppError is Nothing)]" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="If_2">
           <If.Then>
-            <Throw Exception="[new ApplicationException(in_AppError)]" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            <Throw Exception="[new ApplicationException(in_AppError)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
           </If.Then>
           <If.Else>
-            <Throw Exception="[new BusinessRuleException(&quot;in_BusError&quot;)]" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+            <Throw Exception="[new BusinessRuleException(in_BusError)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
           </If.Else>
         </If>
       </If.Else>
