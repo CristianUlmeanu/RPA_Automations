@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eYRi+b0sq0jEpl3yFpO4KEFTA/UHidNkj6mdnJgOV3f0XQMvbME5XFnylqI5zRpXkOEQ/yucpk6Vrbo6xJEDRQ==",
+  "dgSpecHash": "astW/9f/Rtny8fa3MGhHcJd+t0xKBsgkn+3YZ9/F6ryAaAGXlEkNHrlSE0atz/pZQ72mh0HklC91hu1WFchlzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crisi\\Desktop\\FLowuri UiPath\\Cin7 Date Updater for Transactions\\.local\\",
+  "projectFilePath": "D:\\Facultate\\Github\\RPA_Automations\\Cin7 Date Updater for Transactions\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\crisi\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\crisi\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
